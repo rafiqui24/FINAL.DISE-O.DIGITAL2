@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/donaciones.css">
+    <script src="https://kit.fontawesome.com/4c798351d8.js" crossorigin="anonymous"></script>
+    <title>HOGAR CORAZONES INFANTES/DONACIONES</title>
+</head>
+<!-- DONACIONES (EFECTO PARALLAX)--> 
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="blog.html">Blog</a>
+                <a href="quienes.html">Quiénes somos</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="comentarios.html">Comentarios</a>
+                <a href="donaciones.html">Donaciones</a>
+            </nav>
+        </header>
+        <section class="no-parallax">
+            
+            <h1>CORAZONES INFANTES</h1>
+            <p>Puedes donar en la parte inferior</p>
+        </section>
+<!-- FORMULARIO DE PAGA -->
+        <section class="parallax fondo">
+            <div class="donacion">
+                <h2>Forma de Paga</h2>
+                <form method="POST">
+                    <h4>Cuenta</h4>
+                    <div class="grupo-input">
+                        <div class="caja-input">
+                            <input type="text" placeholder="Nombre Completo" required class="nombre">
+                            <i class="fa-solid fa-user icon"></i>
+                        </div>
+                        <div class="caja-input">
+                           <input type="text" placeholder="Apodo" required class="nombre"> 
+                           <i class="fa-solid fa-user-ninja icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="grupo-input">
+                        <div class="caja-input">
+                            <input type="email" placeholder="Correo Electrónico" required class="nombre">
+                            <i class="icon fa-solid fa-envelope icon"></i>
+                        </div>
+                    </div>
+                    <div class="grupo-input">
+                       <div class="caja-input">
+                            <h4>Fecha de Nacimiento</h4>
+                            <input type="text" placeholder="DD" class="dob">
+                            <input type="text" placeholder="MM" class="dob">
+                            <input type="text" placeholder="AAAA" class="dob">
+                       </div> 
+                    </div>
+                    <div class="grupo-input">
+                    </div>
+
+                    <div class="grupo-input">
+                        <div class="caja-input">
+                            <input type="tel" placeholder="Número de Tarjeta" required class="nombre">
+                            <i class="fa-solid fa-credit-card icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="grupo-input">
+                        <div class="caja-input">
+                            <input type="tel" placeholder="Tarjeta CVC" required class="nombre">
+                            <i class="fa-solid fa-user icon"></i>
+                        </div>
+                        <div class="caja-input">
+                           <select>
+                                <option>04 Dic</option>
+                                <option>05 Dic</option>
+                                <option>06 Dic</option>
+                           </select> 
+                           <select>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                       </select> 
+                        </div>
+                    </div>
+
+                    <div class="grupo-input">
+                        <div class="caja-input">
+                           <button type="submit">PAGAR AHORA</button> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+<!-- AGRADECIMIENTO -->
+        <section class="no-parallax">
+            <h1>¡Muchas gracias!</h1>
+        </section>
+    </main>
+
+    <script src="/js/archivo.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CONTACTO */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------------------- */
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 10px;
+    animation: moverDerecha 1.5s ease-in;
+}
+
+nav > a:hover{
+   text-decoration: underline;
+}
+
+/* --------------------------- */
+
+a {
+    text-decoration: none;
+}
+
+body {
+   background: white; 
+   font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 1px 2px black;
+    animation: moverDerecha 1.5s ease-in;
+}
+
+.contenedor h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(145, 68, 181);
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenido .info, 
+.contenido .form{
+    width: 50%;
+}
+
+/* --------------------------- */
+
+.info{
+   padding-left: 10px; 
+}
+
+.info .col {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.info .col .icon{
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+.info .col p {
+   color: rgb(127, 127, 127); 
+}
+
+.info .redes-sociales {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info .redes-sociales a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: rgb(145, 68, 181);
+    border-radius: 10px;
+    color: white;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: 0px 3px 2px rgb(127, 127, 127);
+}
+
+.info .redes-sociales a:hover {
+    background: rgb(0, 0, 0);
+}
+
+.form {
+    padding-left: 10px;
+}
+
+.form input[type='text'],
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid rgb(127, 127, 127);
+    color: rgb(127, 127, 127);
+    font-weight: 400;
+    outline: 0;
+}
+
+.form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 160px;
+    max-height: 210px;
+}
+
+.form input[type='text']:focus,
+.form textarea:focus {
+   border: 3px solid rgb(145, 68, 181);
+}
+
+.form button {
+    padding: 12px 30px;
+    border: transparent;
+    color: white;
+    background: rgb(145, 68, 181);
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 20px;
+    float: right;
+}
+
+.form button:hover {
+    background: black;
+}
+
+
+/* ------------------------ */
+
+.footer-container {
+    width: 100%;
+    background-color: rgb(128, 37, 156);
+    margin-top: 50px;
+    animation: arriba 1.5s ease-in;
+}
+
+.footer-container .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0px;
+}
+
+.footer-container .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .grupo-1 .box figure img{
+    width: 400px;
+}
+
+.footer-container .grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer-container .grupo-1 .box p {
+    color: white;
+    margin-bottom: 10px;
+} 
+
+.footer-container .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgb(161, 81, 175);
+    text-align: center;
+}
+
+.footer-container .grupo-1 .red-social a:hover{
+    color: rgb(20, 5, 35);
+}
+
+.footer-container .grupo-2 {
+    background-color: rgb(128, 37, 156);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer-container .grupo-2 small{
+    font-size: 15px;
+}
+
+/* --------------------------- */
+
+
+@keyframes abajo {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

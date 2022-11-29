@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 10px;
+    animation: abajo 1.5s ease-in;
+}
+
+nav > a:hover{
+   text-decoration: underline;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    background-color: #39a59c;
+    animation: abajo 1.5s ease-in;
+}
+.encabezado img {
+    width: 400px;
+}
+
+.seccion {
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+    width: 100%; 
+}
+
+.contenido-slider {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+.contenido-slider:nth-child(1){
+  text-decoration: none;
+}
+
+.contenido-slider:nth-child(2){
+    text-decoration: none;
+}
+
+.contenido-slider:nth-child(3){
+    text-decoration: none;
+}
+
+.contenido-slider:nth-child(4){
+    text-decoration: none;
+}
+
+.contenido-slider > img {
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 30px;
+}
+
+.seccion .contenido{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    animation: moverDerecha 1.5s ease-in;
+}
+
+.titulo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.boton{
+    display: inline-block;
+    background:  black ;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 40px; 
+    font-weight: 500;
+    margin-bottom: 10px; 
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;    
+    letter-spacing: 1px;
+    margin-bottom: 10px; 
+}
+
+/* ------------------------ */
+
+.footer-container {
+    width: 100%;
+    background-color: rgb(128, 37, 156);
+    animation: arriba 1.5s ease-in;
+}
+
+.footer-container .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0px;
+}
+
+.footer-container .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .grupo-1 .box figure img{
+    width: 400px;
+}
+
+.footer-container .grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer-container .grupo-1 .box p {
+    color: white;
+    margin-bottom: 10px;
+} 
+
+.footer-container .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgb(161, 81, 175);
+    text-align: center;
+}
+
+.footer-container .grupo-1 .red-social a:hover{
+    color: rgb(20, 5, 35);
+}
+
+.footer-container .grupo-2 {
+    background-color: rgb(128, 37, 156);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer-container .grupo-2 small{
+    font-size: 15px;
+}
+
+/* --------------------------- */
+
+
+@keyframes abajo {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
